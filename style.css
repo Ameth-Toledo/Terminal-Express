@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9; /* Fondo claro */
+    color: #333; /* Color del texto */
+}
+
+.navbar {
+    background-color: #4a90e2; /* Color de fondo azul */
+    color: #fff; /* Color del texto blanco */
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+main {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px; 
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo del contenedor principal */
+}
+
+.container, .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff; /* Fondo blanco para el contenedor */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    gap: 20px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+}
+
+.container:hover, .container2:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más profunda */
+}
+
+h2 {
+    color: #4a90e2; /* Color del texto del título */
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4a90e2; /* Azul */
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 24px); /* Ancho igual al de los inputs */
+}
+
+button:hover {
+    background-color: #357ab8; /* Azul más oscuro al pasar el cursor */
+    transform: translateY(-2px);
+}
+
+input {
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco */
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Borde claro */
+    padding: 12px;
+    font-size: 16px;
+    width: calc(100% - 24px); /* Mantiene el ancho del input */
+    transition: border-color 0.3s ease; /* Transición suave */
+}
+
+input:focus {
+    border-color: #4a90e2; /* Azul en foco */
+    outline: none; /* Sin borde de enfoque adicional */
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
